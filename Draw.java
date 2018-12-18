@@ -2,21 +2,35 @@
  *  Barak Stout
  */
 import java.awt.Graphics;
+import java.awt.Color;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
 class Draw extends JComponent {
 
     // Size of frame
-    public final int HEIGHT = 500;
-    public final int WIDTH = 500; 
+    public static final int HEIGHT = 1000;
+    public static final int WIDTH = 1000; 
 
     public void paint(Graphics g) 
     {
         /*** <<< complete the code here! >>> 
-         * The command g.drawLine(x1,y1,x2,y2)
-         * will draw a line from (x1,y1) to (x2,y2)
+         * For refrence:  
+         *     g.drawLine(x1,y1,x2,y2) 
+         *     g.drawRect(x,y,width,height)
+         *     g.fillRect(x,y,width,height)
+         *     g.drawOval(x,y,width,height)
+         *     g.fillOval(x,y,width,height)
+         *     g.drawArc(x,y,width,height,startAngle, arcAngle)
+         *     g.fillArc(x,y,width,height,startAngle, arcAngle)
+         *     g.drawString(str,x,y)
+         *     g.setColor(new Color(R,G,B))
          */
+         
+         g.drawLine(30,30,250,250);
+         g.fillOval(300,300,50,50);
+         g.fillArc(50,50,300,100,0,150);
+
     }
 
     /*** DO NOT TOUCH ***/
