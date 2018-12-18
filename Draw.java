@@ -27,10 +27,7 @@ class Draw extends JComponent {
          *     g.setColor(new Color(R,G,B))
          */
          
-         g.drawLine(30,30,250,250);
-         g.fillOval(300,300,50,50);
-         g.fillArc(50,50,300,100,0,150);
-
+         
     }
 
     /*** DO NOT TOUCH ***/
